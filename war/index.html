@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+<!-- The First Page -->
+<html>
+<head>
+<title>Adhvay</title>
+</head>
+<style type="text/css">
+    body {
+        background-color: #dff8eb;
+        color: #000; 
+        background: -webkit-linear-gradient(200deg, #ec315e , #ab1035); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(200deg, #ec315e , #ab1035); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(200deg, #ec315e , #ab1035); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(200deg, #ec315e , #ab1035); /* Standard syntax */
+        margin: 0px;
+        padding: 0px;
+    }
+    .titleDiv{
+        background-color: #0a0103;
+        color: #dff8eb;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        overflow: hidden;
+        height: 10%;
+        display: table;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.7);
+        -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.7);
+        -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.7);
+    }
+    .title {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 2em;
+    }
+    h2 {
+        text-align: center;
+        text-shadow: 1px 1px #17b890;
+    }
+    .loginform {
+        clear: both;
+        margin: 5% 30%;
+        width: 40%;
+        border: 2px solid #5c0e1b;
+        background-color: #b9ffb7;
+        -moz-box-shadow:    3px 3px 5px 6px #5c0e1b;
+        -webkit-box-shadow: 3px 3px 5px 6px #5c0e1b;
+        box-shadow:         3px 3px 5px 6px #5c0e1b;
+    }
+    form {
+        border-radius: 5px;
+        z-index: -1;
+    }
+    
+    label {
+        margin: 5%;
+        font-size:110%;
+    }
+    input {
+        background-color: #eee;
+        background: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #fff), color-stop(100%, #efefef));
+        background: -moz-linear-gradient(top, #fff, #efefef);
+        border-radius: 3px;
+        -webkit-border-radius: 3px 3px 3px 3px;
+        -moz-border-radius: 3px 3px 3px 3px;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.7);
+        -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.7);
+        -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.7);
+        border: solid 1px #efefef;
+        text-shadow: 0px 1px 1px white;
+    }
+    input[type=text]:focus,input[type=password]:focus {
+        box-shadow: 0px 1px 8px #5c0e1b;
+        -webkit-box-shadow: 0px 1px 8px #5c0e1b;
+        -moz-box-shadow: 0px 1px 8px #5c0e1b;
+    }
+    input[type=text],input[type=password],select {
+        //width: 100%;
+        padding: 6px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        color: #f7fff7;
+        padding: 10px 8px;
+        height: 3.5em;
+        width: 6em;
+        margin: 8px;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        cursor: pointer;
+        background: #ec315e;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        box-shadow: 0px 1px 3px #5c0e1b;
+        -webkit-box-shadow: 0px 1px 3px #5c0e1b;
+        -moz-box-shadow: 0px 1px 3px #5c0e1b;
+        border: solid 2px #ec315e;
+    }
+    .button {
+        text-align: center;
+        vertical-align: middle;
+    }
+    input[type=submit]:hover { 
+        background: #ec315e;
+        box-shadow: 0px 4px 8px #5c0e1b;
+        -webkit-box-shadow: 0px 4px 8px #5c0e1b;
+        -moz-box-shadow: 0px 4px 8px #5c0e1b;
+        cursor: pointer;
+    }
+    .otherLogin {
+        margin: 5% 30%;
+        width: 60%;
+    }
+    ul{
+        list-style: none;
+        display: inline;
+        text-align: center;
+    }
+    li{
+        display: inline;
+        padding-right: 75px;
+        font-size:110%;
+    }
+    a {
+        text-decoration: underline;
+        color: #f7fff7; 
+    }
+    #text {
+        margin-left: 25%;
+        color: #f7fff7;
+        font-size:110%;
+    }
+    
+</style>
+<body>
+    <div class="titleDiv">
+        &nbsp;&nbsp;<div class="title"><b>Adhvay</b></div>
+    </div>
+    <br><br>
+    <section class="loginform">
+    <div id="login">
+        <h2>Doctor Login</h2>
+        <form action="/loginDaction" method="post">            
+                <br>
+                <label>Doctor Id:</label><input type="text" name="doctorid" required><br>
+                <label>Patient id:</label><input type="text" name="patientproofid" required>
+                <select name="Proofs">
+                        <option value="Aadhar">Aadhar Id</option>
+                        <option value="licence">Licence</option>
+                        <option value="voter">Voter</option>
+                        <option value="pan">Pan</option>
+                        <option value="passport">Passport</option>
+                </select><br>
+                <label>Password:</label><input type="password" name="password"><br><br>
+                <div class="button">
+                    <input id="btnSubmit" type="submit" name="btnSubmit"  value="Submit"/><br>
+                </div>
+          </form>
+    </div>
+    </section>
+    <section class="otherLogin">
+        <div class="optionsLogin">            
+            <p id="text">Or login as:</p>
+            <ul>
+                <li><a href="patient_login.html" >Patient</a></li>
+                 <li><a href="report_login.html" >Diagnostic Center</a></li>   
+                 <li><a href="pharmacy_login.html" >Pharmacist</a></li>   
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
+
+
+   
+
