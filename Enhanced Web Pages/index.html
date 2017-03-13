@@ -31,22 +31,22 @@
 		<div class="col s12 m8 offset-m2 l4 offset-l4" style="padding-top: 6%;">
         <div class="card-panel grey lighten-5 z-depth-1">
 			<h4 class="header2" style="vertical-align:center;">Doctor Login</h4>
-			<form>
+			<form action="/loginDaction" method="post">
 			  <div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">assignment_ind</i>
-				  <input id="icon_prefix" type="text" class="validate" autofocus>
+				  <input id="icon_prefix" type="text" name="doctorid" class="validate" autofocus>
 				  <label for="icon_prefix">Doctor ID</label>
 				</div>
 			  </div>
 			  <div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">perm_contact_calander</i>
-				  <input id="icon_telephone" type="tel" class="validate">
+				  <input id="icon_telephone" type="tel" name="patientproofid" class="validate">
 				  <label for="icon_telephone">Patient ID</label>
 				</div>
 				<div class="input-field col s12">
-					<button class="btn waves-effect waves-light right submit" type="submit" name="action">Submit
+					<button class="btn waves-effect waves-light right submit" type="submit" name="btnSubmit">Submit
 					  <i class="mdi-content-send right"></i>
 					</button>
 				</div>
