@@ -15,6 +15,20 @@
       	}
       </style>
     </head>
+	<script>
+		function check() {
+			var pass1 = document.getElementById("password").value;
+			var pass2 = document.getElementById("passwordConfirm").value;
+			
+			if (pass1 != pass2) {
+				$("#passwordConfirm").removeClass("valid").addClass("invalid");
+			}
+			else {
+				$("#passwordConfirm").removeClass("invalid").addClass("valid");
+			}
+			
+		}
+    </script>
 
     <body>
 		  <nav>
@@ -31,36 +45,33 @@
 		<div class="col s12 m8 offset-m2 l4 offset-l4" style="padding-top: 6%;">
         <div class="card-panel grey lighten-5 z-depth-1">
 			<h4 class="header2" style="vertical-align:center;">Registration</h4>
-			<form>
-			  <div class="row">
+			<form action="/regscan" method="post">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">loyalty</i>
-				  <input id="icon_prefix" type="text" class="validate" autofocus>
-				  <label for="icon_prefix">Centre Name</label>
+				  <input id="name" type="text" class="validate" name="Name"  required maxlength="30" autofocus>
+				  <label for="name">Centre Name</label>
 			  </div>
 			  
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">call</i>
-				  <input id="icon_telephone" type="tel" class="validate">
-				  <label for="icon_telephone">Contact Number</label>
+				  <input id="mobile" type="tel" class="validate" name="Mobile" pattern="[789][0-9]{9}" pattern=".{10,10}" maxlength="10">
+				  <label for="mobile" data-error="Invalid Number">Contact Number</label>
 				</div>
-				
+				<div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">email</i>
-				  <input id="icon_prefix" type="email" class="validate">
-				  <label for="icon_prefix">Email ID</label>
+				  <input id="email" type="email" class="validate" name="Email" required>
+				  <label for="email" data-error="Invalid ID">Email ID</label>
 			  </div>
-			  
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">lock_outline</i>
-				  <input id="icon_telephone" type="password" class="validate">
-				  <label for="icon_telephone">Password</label>
+				  <input id="password" type="password" class="validate" name="Password" required>
+				  <label for="password">Password</label>
 				</div>
-				
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">lock_outline</i>
-				  <input id="icon_telephone" type="password" class="validate">
-				  <label for="icon_telephone">Confirm Password</label>
+				  <input type="password" class="validate" onkeyup="check();" id="passwordConfirm">
+				  <label for="passwordConfirm" data-error="Password not match" data-success="Password Match">Confirm Password</label>
 				</div>
 				<div class="input-field col s12">
 					<button class="btn waves-effect waves-light right submit" type="submit" name="action">Register
@@ -72,10 +83,9 @@
 			</form>
         </div>
     </div>
-	  
+    
       <!--Import jQuery & materialize.js-->
       <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
     </body>
   </html>
-        

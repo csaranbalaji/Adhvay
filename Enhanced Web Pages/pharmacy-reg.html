@@ -15,6 +15,20 @@
       	}
       </style>
     </head>
+    <script>
+		function check() {
+			var pass1 = document.getElementById("password").value;
+			var pass2 = document.getElementById("passwordConfirm").value;
+			
+			if (pass1 != pass2) {
+				$("#passwordConfirm").removeClass("valid").addClass("invalid");
+			}
+			else {
+				$("#passwordConfirm").removeClass("invalid").addClass("valid");
+			}
+			
+		}
+    </script>
 
     <body>
 		  <nav>
@@ -34,20 +48,20 @@
 			<form action="/regpharm" method="post">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">shopping_cart</i>
-				  <input id="icon_prefix" type="text" class="validate" name="Name"  required maxlength="30" autofocus>
-				  <label for="icon_prefix">Store Name</label>
+				  <input id="name" type="text" class="validate" name="Name"  required maxlength="30" autofocus>
+				  <label for="name">Store Name</label>
 			  </div>
 			  
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">call</i>
-				  <input id="icon_telephone" type="tel" class="validate" name="Mobile" pattern="[789][0-9]{9}" pattern=".{10,10}" maxlength="10">
-				  <label for="icon_telephone">Contact Number</label>
+				  <input id="mobile" type="tel" class="validate" name="Mobile" pattern="[789][0-9]{9}" pattern=".{10,10}" maxlength="10">
+				  <label for="mobile" data-error="Invalid Number">Contact Number</label>
 				</div>
 				<div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">email</i>
-				  <input id="icon_prefix" type="email" class="validate" name="Email" required>
-				  <label for="icon_prefix">Email ID</label>
+				  <input id="email" type="email" class="validate" name="Email" required>
+				  <label for="email" data-error="Invalid ID">Email ID</label>
 			  </div>
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">lock_outline</i>
@@ -56,7 +70,7 @@
 				</div>
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">lock_outline</i>
-				  <input type="password" class="validate" id="passwordConfirm">
+				  <input type="password" class="validate" onkeyup="check();" id="passwordConfirm">
 				  <label for="passwordConfirm" data-error="Password not match" data-success="Password Match">Confirm Password</label>
 				</div>
 				<div class="input-field col s12">
