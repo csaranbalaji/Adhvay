@@ -39,14 +39,14 @@
 			  <div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">person_pin</i>
-				  <input id="icon_prefix" type="text" class="validate" autofocus>
-				  <label for="icon_prefix">Part</label>
+				  <input id="part" type="text" class="validate" autofocus>
+				  <label for="part">Part</label>
 				</div>
 			  <div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">description</i>
-				  <textarea id="icon_telephone" class="materialize-textarea"></textarea>
-				  <label for="icon_telephone">Report</label>
+				  <textarea id="report" class="materialize-textarea"></textarea>
+				  <label for="report">Report</label>
 				</div>
 				<div class="input-field col s12">
 					<button class="btn waves-effect waves-light right submit" type="submit" name="action">Submit

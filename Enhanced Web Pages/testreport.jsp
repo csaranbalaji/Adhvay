@@ -39,18 +39,18 @@
 			  <div class="row">
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">invert_colors</i>
-				  <input id="icon_prefix" type="text" class="validate" autofocus>
-				  <label for="icon_prefix">Test</label>
+				  <input id="test" type="text" class="validate" autofocus>
+				  <label for="test">Test</label>
 				</div>
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">description</i>
-				  <input id="icon_telephone" type="tel" class="validate">
-				  <label for="icon_telephone">Value</label>
+				  <input id="value" type="tel" class="validate">
+				  <label for="value">Value</label>
 				</div>
 				<div class="input-field col s12">
 				  <i class="material-icons prefix">equalizer</i>
-				  <input id="icon_telephone" type="tel" class="validate">
-				  <label for="icon_telephone">Range</label>
+				  <input id="range" type="tel" class="validate">
+				  <label for="range">Range</label>
 				</div>
 				<div class="input-field col s12">
 					<button class="btn waves-effect waves-light right submit" type="submit" name="action">Submit
