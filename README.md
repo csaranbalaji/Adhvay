@@ -1,7 +1,7 @@
 # Adhvay
 Electronic Medical Record system 
 
-##Database structure
+## Database structure
 
 `query> LIST tables`
 
