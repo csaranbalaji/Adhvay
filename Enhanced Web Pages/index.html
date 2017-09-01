@@ -46,7 +46,7 @@
 				  <label for="id">Patient ID</label>
 				</div>
 				<div class="input-field col s12">
-					<button class="btn waves-effect waves-light right submit" type="submit" name="btnSubmit">Submit
+					<button id="Submit" class="btn waves-effect waves-light right submit"  name="btnSubmit">Submit
 					  <i class="mdi-content-send right"></i>
 					</button>
 				</div>
@@ -126,7 +126,13 @@
 			return (c === 0);
 		}
 		
-		//TODO: validate the Aadhar number on key up
+		$("#Submit").on("click", function (){
+			//TODO: validate the Aadhar number on key up
+			
+				//if(!validate($("#id").val()))
+					//alert("Check Aadhar Number");
+			});
+		
 			
 	  </script>
       <!--Import jQuery & materialize.js-->
