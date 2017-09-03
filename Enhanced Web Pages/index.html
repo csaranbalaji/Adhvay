@@ -14,6 +14,9 @@
       		font-family:'Segoe UI';
       	}
       </style>
+      <!--Import jQuery & materialize.js-->
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
     </head>
 
     <body>
@@ -48,7 +51,7 @@
 				<div class="input-field col s12">
 					<button id="Submit" class="btn waves-effect waves-light right submit" type="submit" name="btnSubmit">Submit
 					  <i class="mdi-content-send right"></i>
-					</button>
+					</button>	
 				</div>
 			  </div>
 			  
@@ -127,16 +130,12 @@
 		}
 		
 		$("#Submit").on("click", function (){
-				//TODO: validate the Aadhar number on key up
-				/*if(!validate($("#id").val()))
-					alert("Check Aadhar Number");*/
-			}
+				if(!validate($("#id").val()))
+					alert("Check Aadhar Number");
+			})
 		
 			
 	  </script>
-      <!--Import jQuery & materialize.js-->
-      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
     </body>
   </html>
         
