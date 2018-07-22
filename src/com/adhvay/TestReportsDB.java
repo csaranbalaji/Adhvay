@@ -1,5 +1,5 @@
 /*
- * DB to store Test Reports with optimal values 
+ * DB to store Test Reports with optimal values
  */
 package com.adhvay;
 
@@ -9,72 +9,71 @@ import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable
 public class TestReportsDB {
-	
 
-	@Persistent(defaultFetchGroup="true")
-	private String AadharNo;
 
-	@Persistent
-	private String Test;
-	
-	@Persistent
-	private String Value;
-
-	@Persistent
-	private String Range;
+    @Persistent(defaultFetchGroup = "true")
+    private String AadharNo;
 
     @Persistent
-	private String date;
+    private String Test;
 
-	public TestReportsDB(String aadharNo, String test, String value, String range, String date) {
-		
-		this.AadharNo = aadharNo;
-		this.Test = test;
-		this.Value = value;
-		this.Range = range;
-		this.date = date;
-	}
+    @Persistent
+    private String Value;
 
-	public String getAadharNo() {
-		return AadharNo;
-	}
+    @Persistent
+    private String Range;
 
-	public void setAadharNo(String aadharNo) {
-		AadharNo = aadharNo;
-	}
+    @Persistent
+    private String date;
 
-	public String getTest() {
-		return Test;
-	}
+    public TestReportsDB(String aadharNo, String test, String value, String range, String date) {
 
-	public void setTest(String test) {
-		Test = test;
-	}
+        this.AadharNo = aadharNo;
+        this.Test = test;
+        this.Value = value;
+        this.Range = range;
+        this.date = date;
+    }
 
-	public String getValue() {
-		return Value;
-	}
+    public String getAadharNo() {
+        return AadharNo;
+    }
 
-	public void setValue(String value) {
-		Value = value;
-	}
+    public void setAadharNo(String aadharNo) {
+        AadharNo = aadharNo;
+    }
 
-	public String getRange() {
-		return Range;
-	}
+    public String getTest() {
+        return Test;
+    }
 
-	public void setRange(String range) {
-		Range = range;
-	}
+    public void setTest(String test) {
+        Test = test;
+    }
 
-	public String getDate() {
-		return date;
-	}
+    public String getValue() {
+        return Value;
+    }
 
-	public void setDate(String date) {
-		this.date = date;
-	}
-	
-    
+    public void setValue(String value) {
+        Value = value;
+    }
+
+    public String getRange() {
+        return Range;
+    }
+
+    public void setRange(String range) {
+        Range = range;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
 
 }

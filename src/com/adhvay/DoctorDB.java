@@ -6,27 +6,26 @@ import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
 public class DoctorDB {
-	
-	@PrimaryKey
-	@Persistent(defaultFetchGroup="true")
-	private String DoctorID;
-	
-	@Persistent
-	private String Password;
 
-	public String getDoctorID() {
-		return DoctorID;
-	}
+    @PrimaryKey
+    @Persistent(defaultFetchGroup = "true")
+    private String DoctorID;
 
-	public String getPassword() {
-		return Password;
-	}
+    @Persistent
+    private String Password;
 
-	public DoctorDB(String doctorID, String password) {
-		DoctorID = doctorID;
-		Password = password;
-	}
-	
-	
+    public String getDoctorID() {
+        return DoctorID;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public DoctorDB(String doctorID, String password) {
+        DoctorID = doctorID;
+        Password = password;
+    }
+
 
 }

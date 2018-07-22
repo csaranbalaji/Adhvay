@@ -9,131 +9,119 @@ import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
 public class PatientProofs {
-	
-	@Persistent
-	@PrimaryKey
-	private String Aadharno;
-	
-	@Persistent
+
+    @Persistent
+    @PrimaryKey
+    private String Aadharno;
+
+    @Persistent
     private String Name;
-    
+
     @Persistent
     private String Age;
-    
+
     @Persistent
-    private String Gender ;
-    
+    private String Gender;
+
     @Persistent
     private String BloodGroup;
-    
+
     @Persistent
-    private String Address ;
-    
+    private String Address;
+
     @Persistent
     private String Mobileno;
 
     @Persistent
     private String Emergencyno;
 
-	
-	@Persistent
-	private String Licence;
-	
-	@Persistent
-	private String VoterID;
 
-	@Persistent
-	private String PANCard;
+    @Persistent
+    private String Licence;
 
-	@Persistent
-	private String Passport;
+    @Persistent
+    private String VoterID;
 
-	public String getAadharno() {
-		return Aadharno;
-	}
-	
-	
+    @Persistent
+    private String PANCard;
 
-	public String getName() {
-		return Name;
-	}
+    @Persistent
+    private String Passport;
+
+    public String getAadharno() {
+        return Aadharno;
+    }
 
 
-
-	public String getAge() {
-		return Age;
-	}
-
+    public String getName() {
+        return Name;
+    }
 
 
-	public String getGender() {
-		return Gender;
-	}
+    public String getAge() {
+        return Age;
+    }
 
 
-
-	public String getBloodGroup() {
-		return BloodGroup;
-	}
-
+    public String getGender() {
+        return Gender;
+    }
 
 
-	public String getAddress() {
-		return Address;
-	}
+    public String getBloodGroup() {
+        return BloodGroup;
+    }
 
 
-
-	public String getMobileno() {
-		return Mobileno;
-	}
-
+    public String getAddress() {
+        return Address;
+    }
 
 
-	public String getEmergencyno() {
-		return Emergencyno;
-	}
+    public String getMobileno() {
+        return Mobileno;
+    }
 
 
-
-	public String getLicence() {
-		return Licence;
-	}
-
+    public String getEmergencyno() {
+        return Emergencyno;
+    }
 
 
-	public String getVoterID() {
-		return VoterID;
-	}
+    public String getLicence() {
+        return Licence;
+    }
 
 
-
-	public String getPANCard() {
-		return PANCard;
-	}
-
+    public String getVoterID() {
+        return VoterID;
+    }
 
 
-	public String getPassport() {
-		return Passport;
-	}
+    public String getPANCard() {
+        return PANCard;
+    }
 
 
+    public String getPassport() {
+        return Passport;
+    }
 
-	public PatientProofs(String aadharno, String name, String age, String gender, String bloodGroup, String address,
-			String mobileno, String emergencyno, String licence, String voterID, String pANCard, String passport) {
-		Aadharno = aadharno;
-		Name = name;
-		Age = age;
-		Gender = gender;
-		BloodGroup = bloodGroup;
-		Address = address;
-		Mobileno = mobileno;
-		Emergencyno = emergencyno;
-		Licence = licence;
-		VoterID = voterID;
-		PANCard = pANCard;
-		Passport = passport;
-	}
-	
+
+    public PatientProofs(String aadharno, String name, String age, String gender, String bloodGroup, String address,
+                         String mobileno, String emergencyno, String licence, String voterID, String pANCard, String passport) {
+        Aadharno = aadharno;
+        Name = name;
+        Age = age;
+        Gender = gender;
+        BloodGroup = bloodGroup;
+        Address = address;
+        Mobileno = mobileno;
+        Emergencyno = emergencyno;
+        Licence = licence;
+        VoterID = voterID;
+        PANCard = pANCard;
+        Passport = passport;
+    }
+
 }

@@ -8,62 +8,62 @@ import javax.jdo.annotations.Persistent;
 
 @PersistenceCapable
 public class MedicineDB {
-	
-	@Persistent(defaultFetchGroup="true")
-	private String AadharNo;
 
-	@Persistent
-	private String DrugName;
-	
-	@Persistent
-	private String Quantity;
-	
-	@Persistent
-	private String date;
-	
-	public MedicineDB(){
-		
-	}
+    @Persistent(defaultFetchGroup = "true")
+    private String AadharNo;
 
-	public MedicineDB(String aadharNo, String drugName, String quantity, String date) {
-		
-		this.AadharNo = aadharNo;
-		this.DrugName = drugName;
-		this.Quantity = quantity;
-		this.date = date;
-	}
+    @Persistent
+    private String DrugName;
 
-	public String getAadharNo() {
-		return AadharNo;
-	}
+    @Persistent
+    private String Quantity;
 
-	public void setAadharNo(String aadharNo) {
-		AadharNo = aadharNo;
-	}
+    @Persistent
+    private String date;
 
-	public String getDrugName() {
-		return DrugName;
-	}
+    public MedicineDB() {
 
-	public void setDrugName(String drugName) {
-		DrugName = drugName;
-	}
+    }
 
-	public String getQuantity() {
-		return Quantity;
-	}
+    public MedicineDB(String aadharNo, String drugName, String quantity, String date) {
 
-	public void setQuantity(String quantity) {
-		Quantity = quantity;
-	}
+        this.AadharNo = aadharNo;
+        this.DrugName = drugName;
+        this.Quantity = quantity;
+        this.date = date;
+    }
 
-	public String getDate() {
-		return date;
-	}
+    public String getAadharNo() {
+        return AadharNo;
+    }
 
-	public void setDate(String date) {
-		this.date = date;
-	}
+    public void setAadharNo(String aadharNo) {
+        AadharNo = aadharNo;
+    }
 
-	 
+    public String getDrugName() {
+        return DrugName;
+    }
+
+    public void setDrugName(String drugName) {
+        DrugName = drugName;
+    }
+
+    public String getQuantity() {
+        return Quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        Quantity = quantity;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+
 }

@@ -8,20 +8,17 @@ import javax.jdo.PersistenceManagerFactory;
 You get this instance by instantiating and calling a method on an instance 
 of the PersistenceManagerFactory class */
 
-public final class PMF
-{
+public final class PMF {
 
-private static final PersistenceManagerFactory	pmfInstance	= JDOHelper
-.getPersistenceManagerFactory("transactions-optional");
+    private static final PersistenceManagerFactory pmfInstance = JDOHelper
+            .getPersistenceManagerFactory("transactions-optional");
 
-private PMF()
-{
-}
+    private PMF() {
+    }
 
-public static PersistenceManagerFactory get()
-{
-	
-return pmfInstance;
-}
+    public static PersistenceManagerFactory get() {
+
+        return pmfInstance;
+    }
 
 }

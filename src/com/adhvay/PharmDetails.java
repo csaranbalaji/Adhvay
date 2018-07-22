@@ -9,65 +9,65 @@ import javax.jdo.annotations.PrimaryKey;
 @PersistenceCapable
 public class PharmDetails {
 
-	
-	@Persistent
-	private String Name;
 
-	@Persistent
-	private String Mobile;
-	
-	@PrimaryKey
-	@Persistent	
-	private String Email;
-	
-	@Persistent
-	private String Password;
+    @Persistent
+    private String Name;
 
-	public PharmDetails(String name, String mobile, String email, String password) {
-		
-		this.Name = name;
-		this.Mobile = mobile;
-		this.Email = email;
-		this.Password = password;
-	}
+    @Persistent
+    private String Mobile;
 
-	public String getName() {
-		return Name;
-	}
+    @PrimaryKey
+    @Persistent
+    private String Email;
 
-	public void setName(String name) {
-		this.Name = name;
-	}
+    @Persistent
+    private String Password;
 
-	public String getMobile() {
-		return Mobile;
-	}
+    public PharmDetails(String name, String mobile, String email, String password) {
 
-	public void setMobile(String mobile) {
-		this.Mobile = mobile;
-	}
+        this.Name = name;
+        this.Mobile = mobile;
+        this.Email = email;
+        this.Password = password;
+    }
 
-	public String getEmail() {
-		return Email;
-	}
+    public String getName() {
+        return Name;
+    }
 
-	public void setEmail(String email) {
-		this.Email = email;
-	}
+    public void setName(String name) {
+        this.Name = name;
+    }
 
-	public String getPassword() {
-		return Password;
-	}
+    public String getMobile() {
+        return Mobile;
+    }
 
-	public void setPassword(String password) {
-		this.Password = password;
-	}
+    public void setMobile(String mobile) {
+        this.Mobile = mobile;
+    }
 
-	@Override
-	   public String toString() {
-	        return ("Name:"+this.getName()+
-	                    " Mobile No: "+ this.getMobile() +
-	                    " Email: "+ this.getEmail() +
-	                    " Password : " + this.getPassword());
-	   }
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        this.Email = email;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        this.Password = password;
+    }
+
+    @Override
+    public String toString() {
+        return ("Name:" + this.getName() +
+                " Mobile No: " + this.getMobile() +
+                " Email: " + this.getEmail() +
+                " Password : " + this.getPassword());
+    }
 }

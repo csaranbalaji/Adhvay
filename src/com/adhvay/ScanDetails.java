@@ -8,57 +8,57 @@ import javax.jdo.annotations.PrimaryKey;
 @PersistenceCapable
 public class ScanDetails {
 
-	@Persistent
-	private String Name;
+    @Persistent
+    private String Name;
 
-	@Persistent
-	private String Mobile;
-	
-	@PrimaryKey
-	@Persistent	
-	private String Email;
-	
-	@Persistent
-	private String Password;
+    @Persistent
+    private String Mobile;
 
-	public ScanDetails(String name, String mobile, String email, String password) {
-		
-		Name = name;
-		Mobile = mobile;
-		Email = email;
-		Password = password;
-	}
+    @PrimaryKey
+    @Persistent
+    private String Email;
 
-	public String getName() {
-		return Name;
-	}
+    @Persistent
+    private String Password;
 
-	public void setName(String name) {
-		Name = name;
-	}
+    public ScanDetails(String name, String mobile, String email, String password) {
 
-	public String getMobile() {
-		return Mobile;
-	}
+        Name = name;
+        Mobile = mobile;
+        Email = email;
+        Password = password;
+    }
 
-	public void setMobile(String mobile) {
-		Mobile = mobile;
-	}
+    public String getName() {
+        return Name;
+    }
 
-	public String getEmail() {
-		return Email;
-	}
+    public void setName(String name) {
+        Name = name;
+    }
 
-	public void setEmail(String email) {
-		Email = email;
-	}
+    public String getMobile() {
+        return Mobile;
+    }
 
-	public String getPassword() {
-		return Password;
-	}
+    public void setMobile(String mobile) {
+        Mobile = mobile;
+    }
 
-	public void setPassword(String password) {
-		Password = password;
-	}
+    public String getEmail() {
+        return Email;
+    }
+
+    public void setEmail(String email) {
+        Email = email;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
 
 }
